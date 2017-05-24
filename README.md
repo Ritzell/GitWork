@@ -129,5 +129,13 @@
      + HEAD の位置のみを変更する
     ### --mixied [ハッシュ値]
      + HEADの位置とインデックスを変更する
-### git rebase -i
+### git rebase -i HEAD~[HEADから修正するコミットまでの数]
 + すでにコミットした内容にちょっとしたスペルミスなどが発見されたら修正のコミットをし、そのコミットを正しく実装したコミットに含めて歴史そのものを押しつぶして改変する
+```
+    #  p, pick = use commit
+    #  r, reword = use commit, but edit the commit message
+    #  e, edit = use commit, but stop for amending
+    #  s, squash = use commit, but meld into previous commit
+    #  f, fixup = like "squash", but discard this commit's log message
+    #  x, exec = run command (the rest of the line) using shell
+```
