@@ -158,3 +158,10 @@
 ### git remote add [リモート名] [リポジトリ保存場所(Github)]
 + リモートリポジトリを登録
 + リモート名+ブランチ名で識別(例：origin[リモート名]-master[ブランチ名])
+### git pull
++ 最新のリモートリポジトリを取得
+
+#さらに理解が深まる資料
++ Pro Git : Github社に勤めているScott Chacon氏によって執筆されたGitを基本から学ぶことのできる資料。CC3なため、日本語訳なども無料で観れる
++ LearnGitBranching :Gitの基本的な操作が学べるサイト
++ tryGit : Web上で操作しながらGitを学ぶことができる
