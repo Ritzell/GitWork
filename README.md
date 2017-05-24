@@ -141,3 +141,4 @@
     #  f, fixup = like "squash", but discard this commit's log message
     #  x, exec = run command (the rest of the line) using shell
 ```
++ このコマンドで「It seems that there is already a rebase-merge directory ~~~~~~~」というようなエラーが出る場合は、やりかけのrebaseがあるという警告である。 やりかけを無くして作業を続行するならrmコマンドでやりかけを消す。やりかけを完結させるなら--continueオプションを使う
