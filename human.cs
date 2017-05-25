@@ -8,9 +8,40 @@ interface IHuman{
   void Get(object ob);
 }
 
-class Human{
+class Human : IHuman{
+  string name = "";
   int age = 0;
   float weight = 0;
   float height = 0;
-  string DefaultLanguage = "";
+  string country = "";
+
+  public Human(string n,int a,float w,float h,string c){
+    name = n;
+    age = a;
+    weight = w;
+    height = h;
+    country = c;
+  }
+
+  public void Walk(float speed){
+
+  }
+
+  public void Speak(string text){
+
+  }
+
+  public string listen(){
+    string str = default(string);
+    return str;
+  }
+
+  public void Run(float speed){
+
+  }
+
+  public void Get(object ob){
+
+  }
+
 }
