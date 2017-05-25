@@ -5,4 +5,5 @@ interface Human{
   void Speak(string text);
   string listen();
   void Run(float speed);
+  void Get(object ob);
 }
