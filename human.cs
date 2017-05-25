@@ -1,7 +1,8 @@
 using System;
+using GitEngine;
 
 interface IHuman{
-  void Walk(float speed);
+  void Walk(Vector3 speed);
   void Speak(string text);
   string listen();
   void Run(float speed);
@@ -14,6 +15,7 @@ class Human : IHuman{
   float weight = 0;
   float height = 0;
   string country = "";
+  public Vector3 position =  new Vector3(0,0,0);
 
   public Human(string n,int a,float w,float h,string c){
     name = n;
@@ -23,8 +25,8 @@ class Human : IHuman{
     country = c;
   }
 
-  public void Walk(float speed){
-
+  public void Walk(Vector3 speed){
+    position += speed;
   }
 
   public void Speak(string text){
@@ -32,7 +34,7 @@ class Human : IHuman{
   }
 
   public string listen(){
-    string str = Console.Read();
+    string str = Console.ReadLine();
     return str;
   }
 
@@ -43,5 +45,13 @@ class Human : IHuman{
   public void Get(object ob){
 
   }
+}
 
+
+class Gunity{
+  static void Main(){
+    Human man = new Human("Yuji",18,45,161,"japan");
+    man.Walk(new Vector3(10,0,0));
+    Console.WriteLine(man.position.x);
+  }
 }
