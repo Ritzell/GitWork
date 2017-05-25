@@ -161,7 +161,7 @@
 ### git pull
 + 最新のリモートリポジトリを取得
 
-#さらに理解が深まる資料
+# さらに理解が深まる資料
 + Pro Git : Github社に勤めているScott Chacon氏によって執筆されたGitを基本から学ぶことのできる資料。CC3なため、日本語訳なども無料で観れる
 + LearnGitBranching :Gitの基本的な操作が学べるサイト
 + tryGit : Web上で操作しながらGitを学ぶことができる
