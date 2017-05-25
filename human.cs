@@ -2,7 +2,7 @@ using System;
 using GitEngine;
 
 interface IHuman{
-  void Walk(float speed);
+  void Walk(Vector3 speed);
   void Speak(string text);
   string listen();
   void Run(float speed);
@@ -15,7 +15,7 @@ class Human : IHuman{
   float weight = 0;
   float height = 0;
   string country = "";
-  Vector3 position =  new Vector3(0,0,0);
+  public Vector3 position =  new Vector3(0,0,0);
 
   public Human(string n,int a,float w,float h,string c){
     name = n;
