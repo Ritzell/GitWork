@@ -34,7 +34,7 @@ class Human : IHuman{
   }
 
   public string listen(){
-    string str = Console.Read();
+    string str = Console.ReadLine();
     return str;
   }
 
