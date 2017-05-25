@@ -28,11 +28,11 @@ class Human : IHuman{
   }
 
   public void Speak(string text){
-
+    Console.WriteLine(text);
   }
 
   public string listen(){
-    string str = default(string);
+    string str = Console.Read();
     return str;
   }
 
